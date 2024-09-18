@@ -1,0 +1,68 @@
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  html {
+    /* background: linear-gradient(60deg,  #f784d3d4,  #693d00ad, #5c0286e1);
+    background-size: 500% 500%;
+    animation: gradientAnimation 10s ease infinite; */
+    background-color: rgb(19, 18, 18);
+    
+  }
+  
+  
+  @keyframes move {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(50px, 50px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index:-1;
+    border-radius: 50%;
+    background-color: #d8b411; /* Couleur de la forme */
+    opacity: 10%;
+    animation: move 7s infinite; /* Animation de mouvement */
+    filter: blur(15px);
+  }
+  
+  .shape:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    background-color: #00ff15;
+    opacity: 30%;
+    animation-duration: 15s;
+    z-index:-2;
+    filter: blur(25px);
+  }
+  
+  .shape:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    background-color: #3ce8ff;
+    opacity: 30%;
+    animation-duration: 9s;
+    z-index:-3;
+    filter: blur(40px);
+  }
+  
+  /* Ajoutez plus de formes en répétant le sélecteur .shape avec des couleurs et des tailles différentes */
+  
+  
